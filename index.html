@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 20px;
+        background-image: url(./background\ image_2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 100px;
+        justify-content: center;
+    }
+    .box {
+        overflow: hidden;
+        width: 300px;
+        height: 500px;
+        margin: 0;
+        border-radius: 20px;
+        background-color: white;
+    }
+    .para {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .fiction {
+        
+        padding: 5px 15px;
+        font-size: 10px;
+        font-weight: 200;
+        background-color: rgb(255, 210, 255);
+        color: rgb(161, 9, 161);;
+        border-radius: 10px;
+    }
+    .by {
+        font-size: 12px;
+        font-weight: 400;   
+    }
+    ul {
+         list-style-type: none;
+         display: flex;
+         gap: 10px;
+         padding: 0;
+         margin: 15px, 0;
+    }
+    .tick {
+        color: rgb(161, 9, 161);
+        margin-right: 5px;
+        font-weight: bold;
+    }
+    li {
+        background-color: rgb(255, 210, 255);
+        border-radius: 10px;
+         color: rgb(161, 9, 161);
+         white-space: nowrap;
+         padding: 5px 15px;
+         font-size: 11px;
+    }
+    .sell {
+        display: flex;
+        gap: 20px;
+    }
+    .price {
+        color: rgb(161, 9, 161);
+        font-size: large;
+        font-weight: 1000;
+    }
+    .save {
+        color: green;
+        background-color: rgb(255, 210, 255);
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .cart {
+        color: rgb(161, 9, 161);
+        margin-right: 5px;
+        font-weight: bolder;
+    }
+    button {
+        display: block;
+        width: 100%;
+        height: 53px;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: rgb(161, 9, 161);
+        color: white;
+        border: none;
+    }
+    button:hover {
+        background-color: rgb(110, 5, 110);
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="box">
+            <img src="./midnight library.jpg" width="300" height="200" class="img">
+            <div class="para"> 
+                <h3>The Midnight Library</h3>
+                <span class="fiction">Fiction</span>
+                <p class="by">by Matt Haig</p>
+                <p>A life-affirming novel about infinite 
+                    possibilities and the choices that shape us.</p>
+                    <ul>
+                        <li><span class="tick">✓</span>Bestseller</li>
+                        <li><span class="tick">✓</span>Inspirational</li>
+                        <li><span class="tick">✓</span>Classic</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.399</span>
+                        <del class="del">Rs.599</del>
+                        <span class="save">Save Rs.200</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+        <div class="box">
+            <img src="./the alchemist.jpg" width="300" height="200" class="img">
+            <div class="para">
+                <h3>The Alchemist</h3>
+                <span class="fiction">Adventure</span>
+                <p class="by">by Paulo Coelho</p>
+                <p>A timeless story about following your 
+                    dreams and listening to your heart.</p>
+                    <ul>
+                        <li><span class="tick">✓</span>Classic</li>
+                        <li><span class="tick">✓</span>Inspirational</li>
+                        <li><span class="tick">✓</span>Must Read</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.299</span>
+                        <del class="del">Rs.450</del>
+                        <span class="save">Save Rs.151</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+        <div class="box">
+            <img src="./ikigai.jpg" width="300" height="200" class="img">
+            <div class="para">                
+                <h3>Ikigai</h3>
+                <span class="fiction">Lifestyle</span>
+                <p class="by">by Hector Garcia</p>
+                <p>Discover the Japanese philosophy for a long, 
+                    happy and meaningful life.</p>
+                    <ul>                       
+                        <li><span class="tick">✓</span>Life Changing</li>
+                        <li><span class="tick">✓</span>Wellness</li>
+                        <li><span class="tick">✓</span>Happiness</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.350</span>
+                        <del class="del">Rs.499</del>
+                        <span class="save">Save Rs.149</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+        <div class="box">
+            <img src="./think and grow rich.jpg" width="300" height="200" class="img">
+            <div class="para">                
+                <h3>Think and Grow Rich</h3>
+                <span class="fiction">Self-Help</span>
+                <p class="by">by Napoloen Hill</p>
+                <p>The ultimate guide to achieving wealth and success 
+                    through the power of thought</p>
+                    <ul>                        
+                        <li><span class="tick">✓</span>Success</li>
+                        <li><span class="tick">✓</span>Motivation</li>
+                        <li><span class="tick">✓</span>Classic</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.350</span>
+                        <del class="del">Rs.499</del>
+                        <span class="save">Save Rs.149</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+        <div class="box">
+            <img src="./the hobbit.jpg" width="300" height="200" class="img">
+            <div class="para">               
+                <h3>The Hobbit</h3>
+                <span class="fiction">Fantasy</span>
+                <p class="by">by J.R.R. Tolkien</p>
+                <p>A fantasy adventure of Bilbo Baggins 
+                    and his unexpected journey.</p>
+                    <ul>                        
+                        <li><span class="tick">✓</span>Adventure</li>
+                        <li><span class="tick">✓</span>Fantasy</li>
+                        <li><span class="tick">✓</span>Classic</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.450</span>
+                        <del class="del">Rs.650</del>
+                        <span class="save">Save Rs.200</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+        <div class="box">
+            <img src="./silent.jpg" width="300" height="200" class="img">
+            <div class="para">                
+                <h3>The Silent Patient</h3>
+                <span class="fiction">Thriller</span>
+                <p class="by">by Alex Michaelides</p>
+                <p>A gripping psychological thriller about a 
+                    women who stops speaking</p>
+                    <ul>                        
+                        <li><span class="tick">✓</span>Thriller</li>
+                        <li><span class="tick">✓</span>Psychological</li>
+                        <li><span class="tick">✓</span>Bestseller</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.375</span>
+                        <del class="del">Rs.599</del>
+                        <span class="save">Save Rs.175</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+        <div class="box">
+            <img src="./5am club.jpg" width="300" height="200" class="img">
+            <div class="para">                
+                <h3>The 5 AM Club</h3>
+                <span class="fiction">Productivity</span>
+                <p class="by">by Robin Sharma</p>
+                <p>Own your morning, elevate your life and 
+                    unlock your full potential.</p>
+                    <ul>                       
+                        <li><span class="tick">✓</span>Productivity</li>
+                        <li><span class="tick">✓</span>Success</li>
+                        <li><span class="tick">✓</span>Motivation</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.325</span>
+                        <del class="del">Rs.499</del>
+                        <span class="save">Save Rs.174</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+        <div class="box">
+            <img src="./Sapines.png" width="300" height="200" class="img">
+            <div class="para">                
+                <h3>Sapiens</h3>
+                <span class="fiction">Non-Fiction</span>
+                <p class="by">by Yuval Noah Harari</p>
+                <p>A brief history of humankind from 
+                    the Stone Age to the information age.</p>
+                    <ul>                       
+                        <li><span class="tick">✓</span>History</li>
+                        <li><span class="tick">✓</span>Knowledge</li>
+                        <li><span class="tick">✓</span>Bestseller</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.499</span>
+                        <del class="del">Rs.699</del>
+                        <span class="save">Save Rs.200</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+        <div class="box">
+            <img src="./the power of now.jpg" width="300" height="200" class="img">
+            <div class="para">               
+                <h3>The Power of Now</h3>
+                <span class="fiction">Spirituality</span>
+                <p class="by">by Eckhart Tolie</p>
+                <p>A guide to spritual enlightenment and 
+                    living in the present moment.</p>
+                    <ul>                        
+                        <li><span class="tick">✓</span>Spiritual</li>
+                        <li><span class="tick">✓</span>Mindfulness</li>
+                        <li><span class="tick">✓</span>Bestseller</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.375</span>
+                        <del class="del">Rs.550</del>
+                        <span class="save">Save Rs.175</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+        <div class="box">
+            <img src="./mokingbird.jpg" width="300" height="200" class="img">
+            <div class="para">                
+                <h3>To Kill a Mockingbird</h3>
+                <span class="fiction">Classic</span>
+                <p class="by">by Harper Lee</p>
+                <p>A powerful story of justice, racism and the loss of innocence.</p>
+                    <ul>                        
+                        <li><span class="tick">✓</span>Classic</li>
+                        <li><span class="tick">✓</span>Literature</li>
+                        <li><span class="tick">✓</span>Must Read</li>
+                    </ul>
+                        <div class="sell">
+                        <span class="price">Rs.299</span>
+                        <del class="del">Rs.450</del>
+                        <span class="save">Save Rs.151</span>
+                        </div>
+            </div>
+            <button><span class="cart">🛒</span>Add to cart</button>
+        </div>
+    </div>
+</body>
+</html>
